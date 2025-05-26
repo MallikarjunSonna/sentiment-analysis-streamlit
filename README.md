@@ -1,85 +1,58 @@
-# 🧠 Sentiment Analysis Web App
 
-This project is a **Sentiment Analyzer** built using **Machine Learning** and **Streamlit**. It classifies user‑submitted text reviews as either **Positive** ✅ or **Negative** ❌ based on trained data.
+# Sentiment Analyzer Web App
 
----
+This is a simple web application built with **Streamlit** that uses a **machine learning model** to analyze the sentiment of textual reviews. It classifies user input into **Positive** or **Negative** sentiment.
 
-## 🔍 Overview
-- **Input**: Any English text (e.g., product or movie review).
-- **Pre‑processing**: Lower‑casing, punctuation & stop‑word removal, stemming.
-- **Vectorization**: TF‑IDF.
-- **Model**: Trained Logistic Regression.
-- **Interface**: Streamlit web app.
+## 🚀 Live Demo
 
----
+Check out the deployed app here: [Sentiment Analyzer Live](https://sentiment-analysis-app-8trxnvirzvc9xmiugaztcs.streamlit.app/)
 
-## 📁 Files Included
+## Features
 
-| File | Description |
-|------|-------------|
-| `Sentiment_Analysis.ipynb` | Notebook with EDA, training, and model saving |
-| `app.py` | Streamlit web interface |
-| `sentiment_model.pkl` | Trained classifier |
-| `tfidf_vectorizer.pkl` | Fitted TF‑IDF vectorizer |
-| `dataset.csv` | Training dataset |
-| `requirements.txt` | Python dependencies |
-| `README.md` | Project documentation (this file) |
+- Clean and interactive UI using Streamlit.
+- Preprocessing with NLTK: stopwords removal, stemming, punctuation cleaning.
+- TF-IDF Vectorization.
+- Sentiment classification using a trained ML model.
+- Real-time predictions.
 
----
+## Installation
 
-## 🛠 How to Run Locally
+Clone the repository:
 
 ```bash
-# 1. clone repo
-git clone https://github.com/your‑username/sentiment‑analysis‑app.git
-cd sentiment‑analysis‑app
+git clone https://github.com/MallikarjunSonna/sentiment-analysis-streamlit.git
+cd sentiment-analysis-streamlit
+```
 
-# 2. (optional) create & activate venv
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS / Linux
-source venv/bin/activate
+Install the required packages:
 
-# 3. install requirements
+```bash
 pip install -r requirements.txt
+```
 
-# 4. launch
+## Run Locally
+
+```bash
 streamlit run app.py
 ```
 
-Open **http://localhost:8501/** in your browser.
+## File Structure
+
+```
+sentiment-analysis-streamlit/
+│
+├── app.py                    # Streamlit application
+├── sentiment_model.pkl       # Trained sentiment classifier
+├── tfidf_vectorizer.pkl      # Trained TF-IDF vectorizer
+├── requirements.txt          # Dependencies
+└── README.md                 # Project documentation
+```
+
+## Author
+
+**Mallikarjun Sonna**  
+B.E. Civil Engineering | Data Science Enthusiast
 
 ---
 
-## 🧠 Tech Stack
-- Python 3.10  
-- Streamlit 1.45  
-- scikit‑learn 1.6  
-- NLTK 3.9  
-- pandas / numpy
-
----
-
-## 🧪 Sample Inputs
-
-| Review | Prediction |
-|--------|------------|
-| *“I love this product, works perfectly!”* | ✅ Positive |
-| *“Terrible quality. Very disappointed.”* | ❌ Negative |
-
----
-
-## 🚀 Future Work
-- Deploy on Streamlit Cloud or HuggingFace Spaces  
-- Show model confidence score  
-- Add Neutral sentiment class  
-- Upgrade to transformer‑based embeddings
-
----
-
-## 👤 Author
-**Mallikarjun Sonna**  
-_Data Science Intern @ Unified Mentor Pvt. Ltd._  
-📧 mallusonna43@gmail.com  
-🔗 <https://www.linkedin.com/in/mallikarjun-sonna>
+Feel free to fork, contribute, and connect!
