@@ -51,7 +51,7 @@ sentiment-analysis-streamlit/
 ## Author
 
 **Mallikarjun Sonna**  
-B.E. Civil Engineering | Data Science Enthusiast
+Gen AI Engineer
 
 ---
 
